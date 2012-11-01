@@ -26,7 +26,7 @@
                                     callback.apply(socket, args);
                                 }
                             });
-                        })
+                        });
                     }
                 };
             } else {
