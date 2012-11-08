@@ -1,7 +1,7 @@
-(function(window) {
+(function(angular) {
     'use strict';
 
-    var app = window.angular.module('aesApp', ['Socket']);
+    var app = angular.module('realtimeApp', ['Socket']);
     app.config(function($routeProvider) {
         $routeProvider.
             when('/default', {
@@ -10,6 +10,4 @@
             ).
             otherwise({redirectTo:'/default'});
     });
-
-    window.aesApp = app;
-})(window);
+})(window.angular);

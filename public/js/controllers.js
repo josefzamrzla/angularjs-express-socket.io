@@ -1,7 +1,7 @@
-(function(app, $){
+(function(angular, $){
     'use strict';
 
-    app.controller('DefaultCtrl', function($scope, socket) {
+    angular.module('realtimeApp').controller('DefaultCtrl', function($scope, socket) {
 
         $scope.socketConnected = false;
         var sock = socket('http://localhost:8888');
@@ -16,4 +16,4 @@
 
     });
 
-})(window.aesApp, window.jQuery);
+})(window.angular, window.jQuery);
